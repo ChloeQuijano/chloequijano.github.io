@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Chloe Quijano</title>
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("portfolio-theme") === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Font Awesome Free 6: icons CC BY 4.0, fonts SIL OFL 1.1 (fontawesome.com/license/free) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header-text">
+          <h1 class="name">Chloe Quijano</h1>
+          <p class="tagline">Software Engineer and Developer Advocate</p>
+          <ul class="social-links" aria-label="Social media">
+            <li>
+              <a
+                class="social-links__link"
+                href="https://www.linkedin.com/in/chloequijano"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                ><span>LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="social-links__link"
+                href="https://github.com/ChloeQuijano"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-github" aria-hidden="true"></i
+                ><span>GitHub</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-pressed="false"
+          aria-label="Switch to dark mode"
+        >
+          <i
+            class="fa-solid fa-moon"
+            id="theme-toggle-icon"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </header>
+
+      <section class="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Summary</h2>
+        <p class="summary-text">
+          I ship systems
+          and tools at scale, and I create tutorials and community programs that
+          help people build with new technology. That mix runs through my
+          internships and roles across cloud, data, and AI-adjacent work, as well
+          as long-running efforts in building inclusive tech communities and
+          teaching coding and robotics. Use the toggle below to view either lens
+          in more detail.
+        </p>
+        <p class="summary-text summary-contact">
+          <a href="mailto:chloeann.quijano@gmail.com"
+            >Contact for speaking opportunities</a
+          >
+        </p>
+      </section>
+
+      <nav class="role-toggle" aria-label="Choose how you describe your role">
+        <p class="role-sentence">
+          <span class="role-sentence-lead" id="role-toggle-label">I am a</span>
+          <span
+            class="role-toggle-buttons"
+            role="group"
+            aria-labelledby="role-toggle-label"
+          >
+            <a
+              href="#software-engineer"
+              class="role-btn is-active"
+              data-role="engineer"
+              aria-current="true"
+              aria-controls="panel-engineer"
+            >
+              software engineer
+            </a>
+            <a
+              href="#developer-advocate"
+              class="role-btn"
+              data-role="advocate"
+              aria-controls="panel-advocate"
+            >
+              developer advocate
+            </a>
+          </span>
+          <span class="role-sentence-end" aria-hidden="true"></span>
+        </p>
+      </nav>
+
+      <div class="details">
+        <article
+          id="panel-engineer"
+          class="detail-panel"
+          role="region"
+          aria-labelledby="engineer-heading"
+        >
+          <h3 id="engineer-heading">Software Engineer</h3>
+
+          <section
+            class="engineer-section"
+            aria-labelledby="engineer-education-heading"
+          >
+            <h4 id="engineer-education-heading">Education</h4>
+
+            <div class="education-block">
+              <p class="experience-meta">BE, Software Engineering</p>
+              <p class="experience-dates">
+                Seneca Polytechnic · Expected graduation: August 2026
+              </p>
+              <ul class="detail-list">
+                <li>
+                  <span class="text-label">Awards:</span>
+                  Seneca Engineering Competition 2024 (winner); Ontario
+                  Engineering Competition 2025 (winner); Canadian Engineering Competition 2025 (winner).
+                </li>
+                <li>
+                  <span class="text-label">Activities:</span>
+                  Applied AI research assistant (1 year); Seneca Software
+                  Engineering Competition (2 years).
+                </li>
+              </ul>
+            </div>
+
+            <div class="education-block">
+              <p class="experience-meta">BASc, Engineering Science</p>
+              <p class="experience-dates">University of Toronto · 2019 - 2022</p>
+              <ul class="detail-list">
+                <li>
+                  <span class="text-label">Activities:</span>
+                  First Year Chair (1 year); First Year Council Member (1 year);
+                  Hi-Skule Committee (1 year); Women in Science and Engineering
+                  (2 years); Developer Student Club Lead (1 year).
+                </li>
+              </ul>
+            </div>
+
+            <div class="education-block">
+              <p class="experience-meta">High School Diploma</p>
+              <p class="experience-dates">
+                Loretto Abbey Catholic Secondary School
+              </p>
+              <ul class="detail-list">
+                <li>
+                  <span class="text-label">Activities:</span>
+                  President of the Global Goals Club (2 years); Editor-in-Chief
+                  for the Yearbook and Newspaper Committee (1 year); previously
+                  Junior Editor (1 year).
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section
+            class="engineer-section"
+            aria-labelledby="engineer-experience-heading"
+          >
+            <h4 id="engineer-experience-heading">Experience</h4>
+
+            <div class="experience-block">
+              <p class="experience-company">DoorDash</p>
+              <p class="experience-job">Software Engineering Intern</p>
+              <p class="experience-dates">May 2025 - August 2025</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Tools:</span>
+                  Kotlin, HTML/CSS, Snowflake, AWS S3, Cadence, Kubernetes, SQL,
+                  React.js
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <p class="experience-company">Microsoft</p>
+              <p class="experience-job">Software Engineering Intern</p>
+              <p class="experience-dates">June 2024 - September 2024</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Tools:</span>
+                  Azure, ASP.NET, C#, REST APIs, Cosmos DB, Postman
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <p class="experience-company">Microsoft</p>
+              <p class="experience-job">Software Engineering Intern</p>
+              <p class="experience-dates">May 2023 - August 2023</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Tools:</span>
+                  React.js, ASP.NET, C#, Cosmos DB, Postman
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <p class="experience-company">Microsoft</p>
+              <p class="experience-job">Software Engineering Intern</p>
+              <p class="experience-dates">May 2022 - August 2022</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Tools:</span>
+                  React.js, TypeScript, Azure, Azure Resource Graph, GitHub REST
+                  APIs
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section
+            class="engineer-section"
+            aria-labelledby="engineer-projects-heading"
+          >
+            <h4 id="engineer-projects-heading">Projects</h4>
+            <ul class="detail-list detail-list--projects">
+              <li>
+                <strong class="project-title">Makeup Product Detection &amp; Virtual Try-On</strong>
+                <span class="project-desc"
+                  >Mobile app using AI to detect makeup products and an augmented
+                  reality (AR) tutorial on the face.</span
+                >
+                <span class="project-tools"
+                  ><span class="text-label">Built using:</span> Python, YOLOv8
+                  Model, Roboflow, React Native, Google MediaPipe Face Mesh</span
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/ChloeQuijano/sea710-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Makeup Product Detection project (opens in new tab)"
+                  >View project
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i></a>
+              </li>
+              <li>
+                <strong class="project-title">Brainiac</strong>
+                <span class="project-award"
+                  >Top 3 in Canadian Engineering Competition 2025</span
+                >
+                <span class="project-desc"
+                  >AI model for tumor detection in MRI scans.</span
+                >
+                <span class="project-tools"
+                  ><span class="text-label">Built using:</span> Python, Vision
+                  Transformer (ViT) Model, Flask, HTML/CSS</span
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/ChloeQuijano/brainiac-cec2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Brainiac project (opens in new tab)"
+                  >View project
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i></a>
+              </li>
+              <li>
+                <strong class="project-title">Disaster Hotline</strong>
+                <span class="project-award"
+                  >1st Place at Ontario Engineering Competition 2025</span
+                >
+                <span class="project-desc"
+                  >SMS hotline for reporting nearby disasters.</span
+                >
+                <span class="project-tools"
+                  ><span class="text-label">Built using:</span> Python, Twilio
+                  API, Streamlit</span
+                >
+                <a
+                  class="project-link"
+                  href="https://github.com/ChloeQuijano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Disaster Hotline project (opens in new tab)"
+                  >View project
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i></a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article
+          id="panel-advocate"
+          class="detail-panel"
+          hidden
+          role="region"
+          aria-labelledby="advocate-heading"
+        >
+          <h3 id="advocate-heading">Developer Advocate</h3>
+          <p class="detail-intro">
+            On the developer advocacy side I focus on creating technical videos and documentation using tools such as OBS, Adobe
+            Premiere Pro, Adobe After Effects, and Adobe Photoshop. 
+          </p>
+
+          <section
+            class="advocate-section"
+            aria-labelledby="advocate-videos-heading"
+          >
+            <h4 id="advocate-videos-heading">Videos</h4>
+            <ul class="detail-list detail-list--advocate-links">
+              <li>
+                <a
+                  href="https://youtu.be/YX3wpppd3Cs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Create a WhatsApp AI Chatbot that Responds to Audio, Images and Files</a
+                >
+                - Tutorial video on how to create a WhatsApp AI chatbot using Botpress that can respond to audio, images and files.
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/rTjWp9CU80o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Create a WhatsApp AI Chatbot that Reaches Out For You</a
+                >
+                - Tutorial video on how to create a WhatsApp AI chatbot using Botpress that can reach out to your contacts and send them messages using WhatsApp Message Templates.
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/Fs6dIxgEKoY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >How to Connect your AI Chatbot to WhatsApp [2026]</a
+                >
+                - Tutorial video on how to connect Botpress bots to WhatsApp using Botpress's WhatsApp integration.
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/uK5mrYZhuCo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Build your own Notion AI Agent</a
+                >
+                - Tutorial video on using Botpress and Notion to build an AI agent that can add tasks to your Notion database and make Notion pages searchable.
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/51yT9NTde68"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >How to Build an AI Appointment Scheduling Chatbot with Google Calendar</a
+                >
+                - Tutorial video on using Botpress and Google Calendar to build an AI appointment scheduling chatbot.
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/Hd5blLnynS0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Learn the Google Cloud Essentials</a
+                >
+                - Intro to core Google Cloud concepts and services (Google
+                Developers Student Club - University of Toronto).
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/wJcxFFE-hdY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Solution Challenge 2021 (1: Design Sprint)</a
+                >
+                - Workshop series for the Solution Challenge; episode 1 on design
+                sprint practices (Google Developers Student Club - University of Toronto).
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/5LiDcK2k498"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Solution Challenge 2021 (2: UX and Product Design)</a
+                >
+                - Episode 2 on UX and product design for student projects (Google Developers Student Club - University of Toronto).
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/EwpjS6KNZU8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Solution Challenge 2021 (3: Technical Architecture)</a
+                >
+                - Episode 3 on technical architecture for Solution Challenge
+                submissions (Google Developers Student Club - University of Toronto).
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="advocate-section"
+            aria-labelledby="advocate-docs-heading"
+          >
+            <h4 id="advocate-docs-heading">Documentation / Blogs</h4>
+            <ul class="detail-list detail-list--advocate-links">
+              <li>
+                <a
+                  href="https://botpress.com/docs/changelog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Botpress Changelogs</a
+                >
+                - Ongoing weekly release notes for Botpress.
+              </li>
+              <li>
+                <a
+                  href="https://botpress.com/docs/integrations/integration-guides/whatsapp/start-conversation-through-webhook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Documentation: Start a conversation on WhatsApp through a webhook</a
+                >
+                - Guide to opening WhatsApp chats from an external system using
+                the Webhook integration and Start Conversation card.
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="advocate-section"
+            aria-labelledby="advocate-speaking-heading"
+          >
+            <h4 id="advocate-speaking-heading">Speaking</h4>
+            <ul class="detail-list detail-list--advocate-links">
+              <li>
+                <a
+                  href="https://youtu.be/54Q-chPtF0o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >How to Build Scalable, Modern AI Agents</a
+                >
+                - Video of my talk: How to Build Scalable, Modern AI Agents -
+                Chloe Quijano, Botpress | IWD Toronto 2026.
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/p/C4v5JjfJ0el/?img_index=2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Building with GenAI - Women in Tech Conference (2024)</a
+                >
+                - Talk as a Google WomenTechmakers Ambassador on generative AI.
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="advocate-section"
+            aria-labelledby="advocate-other-heading"
+          >
+            <h4 id="advocate-other-heading">Other</h4>
+            <ul class="detail-list detail-list--advocate-links">
+              <li>
+                <a
+                  href="https://developers.googleblog.com/how-a-developer-student-lead-increased-representation-in-campus-clubs-through-community/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >How a Developer Student Lead Increased Representation in Campus Clubs Through Community</a
+                >
+                - Google Developers blog feature on my work as GDSC lead at UofT.
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/posts/chloequijano_wtmdaretobe-activity-7046885118535217152-i8Ke"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >#WTMDareToBe Panel</a
+                >
+                - Hosted a #WTMDareToBe Women Techmakers panel at the GDSC UTSG
+                Women in Tech conference, including an opening talk on the
+                conference's history.
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/posts/chloequijano_devrel-bts-ugcPost-7432450805275779072-w44L"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >DevRel BTS video edit</a
+                >
+                - Video edit showing behind the scenes of being a Developer
+                Relations intern.
+              </li>
+              <li>
+                <a
+                  href="https://youtu.be/eFMsgHyAKgE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >We Built the Engine That Makes AI Agents Actually Work -
+                  Michael Masson, Botpress | GenAI Montreal</a
+                >
+                - Recorded and edited by me.
+              </li>
+            </ul>
+          </section>
+
+          <section
+            class="advocate-section"
+            aria-labelledby="advocate-experience-heading"
+          >
+            <h4 id="advocate-experience-heading">Experience</h4>
+
+            <div class="experience-block">
+              <p class="experience-company">Botpress</p>
+              <p class="experience-job">Developer Relations Video Intern</p>
+              <p class="experience-dates">January 2026 - April 2026</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Highlights:</span>
+                  Produced 10+ technical videos (TypeScript, ADK) with 20K+ views
+                  on YouTube (
+                  <a
+                    href="https://www.youtube.com/@Botpress"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@Botpress</a
+                  >); daily Discord support for AI agent development; product
+                  documentation and weekly changelogs for releases.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <p class="experience-company">
+                ZebraRobotics, RoboEDU, Toronto Athletic Camps, Genius Camp
+              </p>
+              <p class="experience-job">Robotics &amp; Coding Instructor</p>
+              <p class="experience-dates">October 2022 - January 2026</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Highlights:</span>
+                  Instructed students (ages 5-16) in coding (Python, HTML &amp;
+                  CSS, JavaScript, Scratch) and robotics (Lego Spike, WeDo) across
+                  partner schools and learning centers.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <p class="experience-company">Google</p>
+              <p class="experience-job">WomenTechmakers Ambassador</p>
+              <p class="experience-dates">May 2022 - January 2025</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Highlights:</span>
+                  Organized a Women in Tech Panel for 200+ attendees; taught and
+                  hosted Web Development and Generative AI workshops; speaker on
+                  Generative AI at the Women in Tech Conference 2023.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <p class="experience-company">
+                Indigenous Friends Association (IFA)
+              </p>
+              <p class="experience-job">Technical Curriculum Developer</p>
+              <p class="experience-dates">February 2024 - June 2024</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Highlights:</span>
+                  Created and taught web development courses in HTML, CSS,
+                  JavaScript, and GitHub weekly for classes of 30+ students.
+                </li>
+              </ul>
+            </div>
+
+            <div class="experience-block">
+              <p class="experience-company">
+                Google Developer Student Club, University of Toronto
+              </p>
+              <p class="experience-job">President &amp; Founder</p>
+              <p class="experience-dates">August 2020 - July 2021</p>
+              <ul class="detail-list detail-list--one">
+                <li>
+                  <span class="text-label">Highlights:</span>
+                  Founded and led the Google Developer Student Club at the University of Toronto, hosting Cloud and ML workshops with 1700+ combined event attendees;
+                  speaker at Google DevFest Toronto 2020 and Google I/O Connect
+                  2021.
+                  <a
+                    href="https://www.instagram.com/p/CMvq5FTBAug/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram post</a
+                  >
+                  as GDSC UofT President. Founded the GDSC Women in Tech
+                  Conference at the University of Toronto.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </div>
+
+      <footer class="footer">
+        <a
+          class="footer__link"
+          href="mailto:chloeann.quijano@gmail.com"
+          ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+          ><span>chloeann.quijano@gmail.com</span></a
+        >
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -133,4 +133,20 @@
   window.addEventListener("hashchange", function () {
     applyRoleFromHash();
   });
+
+  var videoTabBtns = document.querySelectorAll(".video-tab-btn");
+  videoTabBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var tab = btn.getAttribute("data-video-tab");
+      videoTabBtns.forEach(function (b) {
+        var active = b.getAttribute("data-video-tab") === tab;
+        b.classList.toggle("is-active", active);
+        b.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      var longPanel = document.getElementById("video-panel-long");
+      var shortPanel = document.getElementById("video-panel-short");
+      if (longPanel) longPanel.hidden = tab !== "long";
+      if (shortPanel) shortPanel.hidden = tab !== "short";
+    });
+  });
 })();

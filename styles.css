@@ -419,6 +419,46 @@ a.role-btn {
   font-weight: 600;
 }
 
+.video-tabs {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.video-tab-btn {
+  padding: 0.3rem 0.75rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-role-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 0.35rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.video-tab-btn:hover {
+  color: var(--color-role-hover-text);
+  background: var(--color-role-hover-bg);
+}
+
+.video-tab-btn:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.video-tab-btn.is-active {
+  color: var(--color-role-active-text);
+  background: var(--color-role-active-bg);
+  border-color: var(--color-role-active-bg);
+}
+
+.view-count {
+  font-size: 0.85em;
+  color: var(--color-text-muted);
+}
+
 .skills-summary {
   margin: 0 0 1rem;
   color: var(--color-text-body);

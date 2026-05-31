@@ -27,9 +27,9 @@
   --color-role-active-shadow: rgba(28, 25, 23, 0.2);
   --color-panel-shadow: rgba(28, 25, 23, 0.06);
   --color-detail-note: #44403c;
-  --color-link: #92400e;
+  --color-link: #9d174d;
   --color-footer-sep: #a8a29e;
-  --color-focus: #b45309;
+  --color-focus: #be185d;
   --color-theme-btn-bg: rgba(255, 255, 255, 0.6);
   --color-theme-btn-border: rgba(28, 25, 23, 0.12);
   --color-theme-btn-text: #44403c;
@@ -57,9 +57,9 @@ html[data-theme="dark"] {
   --color-role-active-shadow: rgba(0, 0, 0, 0.25);
   --color-panel-shadow: rgba(0, 0, 0, 0.2);
   --color-detail-note: #d6d3d1;
-  --color-link: #fbbf24;
+  --color-link: #f472b6;
   --color-footer-sep: #78716c;
-  --color-focus: #fbbf24;
+  --color-focus: #f472b6;
   --color-theme-btn-bg: rgba(68, 64, 60, 0.5);
   --color-theme-btn-border: rgba(250, 250, 249, 0.12);
   --color-theme-btn-text: #e7e5e4;
